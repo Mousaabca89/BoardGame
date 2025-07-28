@@ -25,5 +25,10 @@ pipeline {
                 sh 'mvn package'
             }
         }
+        stage('Hello') {
+            steps {
+                sh ech 'Webhook trigger'
+            }
+        }
     }
 }
